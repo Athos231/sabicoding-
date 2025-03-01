@@ -64,7 +64,7 @@ const Dashboard = () => {
           <FaMobileAlt className="text-blue-600 text-5xl mx-auto mb-4" />
           <h2 className="text-xl font-semibold">USSD Development</h2>
           <p className="text-gray-500">Create feature-phone applications.</p>
-          <Link href="/ussd" className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md">
+          <Link href="/Ussd" className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md">
             Explore
           </Link>
         </div>
