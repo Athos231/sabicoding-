@@ -64,7 +64,7 @@ export const Navbar = () => {
           <div className="hidden mr-3 lg:flex nav__item">
             <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               <SignedIn>
-                <Link href="/dashboard" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+                <Link href="/dashboard" className="px-5 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
                   Go to Dashboard
                 </Link>
               </SignedIn>
