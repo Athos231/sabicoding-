@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
-import userThreeImg from "../../public/img/user3.jpg";
+// import userOneImg from "../../public/img/user11.jpg";
+// import userTwoImg from "../../public/img/user22.jpg";
+// import userThreeImg from "../../public/img/user33.jpg";
 
 export const Testimonials = () => {
   return (
@@ -13,40 +13,40 @@ export const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-            Starting with no prior knowledge, the mobile-first experience allowed me to learn on the go. Today, <Mark>I'm employed today</Mark>, thanks to Sabi Coding's comprehensive training.
+              Starting with no prior knowledge, the mobile-first experience allowed me to learn on the go. Today, <Mark>I'm employed today</Mark>, thanks to Sabi Coding&apos;s comprehensive training.
             </p>
 
-            <Avatar
+            {/* <Avatar
               image={userOneImg}
               name="Peter George"
               title="Sierra Leone "
-            />
+            /> */}
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-            The structured curriculum and local mentorship at Sabi Coding transformed my understanding of Python. Within three months, I secured a job as a <Mark>junior developer</Mark>, and I owe it to the practical skills I gained.
+              The structured curriculum and local mentorship at Sabi Coding transformed my understanding of Python. Within three months, I secured a job as a <Mark>junior developer</Mark>, and I owe it to the practical skills I gained.
             </p>
 
-            <Avatar
+            {/* <Avatar
               image={userTwoImg}
               name="Sinneh Michael Kargbo"
               title="Kenya"
-            />
+            /> */}
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-            The inclusive learning environment at Sabi Coding made complex concepts accessible. The AI-powered learning system personalized my journey, and now, <Mark>I'm confidently applying my skills</Mark> in a real-world setting.
+              The inclusive learning environment at Sabi Coding made complex concepts accessible. The AI-powered learning system personalized my journey, and now, <Mark>I'm confidently applying my skills</Mark> in a real-world setting.
             </p>
-
+{/* 
             <Avatar
               image={userThreeImg}
               name="Blaise"
               title="Rwanda"
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ export function Footer() {
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div>
-              {" "}
               <Link
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
@@ -29,7 +28,7 @@ export function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            Sabi Coding was founded in 2021 in Rwanda as an open online learning and teaching marketplace provider aimed to empower over 100,000 adults and students in Africa by 2050 by providing free and paid tech & leadership courses. We started Sabi Coding to meet the pocket of the average youth in Africa that can't afford expensive online learning related to computer science but are passionate about education
+              Sabi Coding was founded in 2021 in Rwanda as an open online learning and teaching marketplace provider aimed to empower over 100,000 adults and students in Africa by 2050 by providing free and paid tech &amp; leadership courses. We started Sabi Coding to meet the pocket of the average youth in Africa that can't afford expensive online learning related to computer science but are passionate about education
             </div>
           </div>
 
@@ -83,8 +82,7 @@ export function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Sabi Coding 
-          
+          Copyright © {new Date().getFullYear()}. Sabi Coding
         </div>
       </Container>
     </div>
@@ -114,6 +112,7 @@ const Facebook = ({ size = 24 }) => (
     <path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07" />
   </svg>
 );
+
 const Instagram = ({ size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +159,6 @@ const Backlink = () => {
           fill="#F7FAFC"
         />
       </svg>
-
     </a>
   );
 };
