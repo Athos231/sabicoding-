@@ -1,7 +1,8 @@
-"use client";
+"use client";  // Make sure this is placed at the top to indicate it's a client component
+import { usePathname } from "next/navigation";  // Use the correct import for pathname
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
-import Image from "next/image"
+import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import {
   ClerkProvider,
@@ -10,9 +11,11 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-} from '@clerk/nextjs'
+} from '@clerk/nextjs';
 
 export const Navbar = () => {
+  const pathname = usePathname();  // Get the current pathname
+
   const navigation = [
     "Sabi Coding Business",
     "Teach on Sabi Coding",
@@ -20,6 +23,21 @@ export const Navbar = () => {
     "Company",
     "Blog",
   ];
+
+  // If we are on the dashboard page, don't render the Navbar
+  if (pathname === "/dashboard") {
+    return null; // This hides the Navbar component on the dashboard page
+  }
+
+  // If we are on the content page, don't render the Navbar
+  if (pathname === "/Content") {
+    return null; // This hides the Navbar component on the content page
+  }
+
+  // If we are on the content page, don't render the Navbar
+  if (pathname === "/Ai") {
+    return null; // This hides the Navbar component on the content page
+  }
 
   return (
     <div className="w-full">
@@ -55,7 +73,6 @@ export const Navbar = () => {
                   Get Started
                 </SignUpButton>
               </SignedOut>
-
             </Link>
           </div>
         </div>
@@ -122,5 +139,4 @@ export const Navbar = () => {
       </nav>
     </div>
   );
-}
-
+};

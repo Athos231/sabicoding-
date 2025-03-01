@@ -23,14 +23,15 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       {/* Header with Auth Check */}
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold text-indigo-600">Learning Dashboard</h1>
+      <div className="flex justify-between mb-6">
+      <h1 className="text-3xl font-bold text-green-600 text-center mb-6">Learning Dashboard</h1>
         <SignedIn>
           <UserButton />
         </SignedIn>
         <SignedOut>
           <SignInButton />
         </SignedOut>
+        
       </div>
 
       {/* Learning Options */}

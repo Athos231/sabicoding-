@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FaPython, FaJs, FaGamepad, FaMobile, FaBrain, FaLock } from "react-icons/fa";
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs"; // Import Clerk components
 
 const topics = [
   {
@@ -44,15 +45,36 @@ const topics = [
 const ContentLearning = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold text-green-600 text-center mb-6">Content-Based Learning</h1>
+      {/* Header with Auth Check */}
+      <div className="flex justify-between mb-6">
+        <h1 className="text-3xl font-bold text-green-600 text-center mb-6">Content-Based Learning</h1>
 
+        {/* Auth Buttons */}
+        <div className="flex items-center space-x-4">
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          <SignedOut>
+            <SignInButton>
+              <button className="px-6 py-2 text-white bg-indigo-600 rounded-md">Sign In</button>
+            </SignInButton>
+            <SignUpButton>
+              <button className="px-6 py-2 text-white bg-green-600 rounded-md">Sign Up</button>
+            </SignUpButton>
+          </SignedOut>
+        </div>
+      </div>
+
+      {/* Content sections */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {topics.map((topic, index) => (
           <div key={index} className="bg-white p-6 shadow-lg rounded-xl hover:shadow-xl transition-all text-center">
             {topic.icon}
             <h2 className="text-xl font-semibold">{topic.title}</h2>
             <p className="text-gray-500">{topic.description}</p>
-            <Link href={topic.link} className="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-md">
+
+            {/* Start Learning Button */}
+            <Link href={topic.link} className="mt-6 inline-block bg-green-600 text-white px-4 py-2 rounded-md">
               Start Learning
             </Link>
           </div>
