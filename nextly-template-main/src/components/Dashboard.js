@@ -63,7 +63,7 @@ const Dashboard = () => {
         <div className="bg-white p-6 shadow-lg rounded-xl hover:shadow-xl transition-all text-center">
           <FaMobileAlt className="text-blue-600 text-5xl mx-auto mb-4" />
           <h2 className="text-xl font-semibold">USSD Development</h2>
-          <p className="text-gray-500">Create feature-phone applications.</p>
+          <p className="text-gray-500">Feature-phone applications.</p>
           <Link href="/Ussd" className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md">
             Explore
           </Link>
